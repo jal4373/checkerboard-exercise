@@ -38,12 +38,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         setInterval(createNewColors, 200, list_squares);
     }
         
-    function createNewColors(list_squares);
+    function createNewColors(list_squares) {
+
         list_squares.forEach(element => {
-            "background-color:rgb(" + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+            element.style.backgroundColor = "rgb(" + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
         });
     
-
+    }
     function createClassicBoard(color1, color2) {
         
         let color1 = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
